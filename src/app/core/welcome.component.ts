@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
-import {CommonService} from './services/common.service';
 import {Router} from '@angular/router';
+import {CommonService} from '../services/common.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-welcome',
+  templateUrl: './welcome.component.html',
+  styleUrls: ['./welcome.component.css']
 })
-export class AppComponent {
-  title = 'app';
+export class WelcomeComponent {
+  showSon = false;
   constructor(public common: CommonService,
               private router: Router) {}
 

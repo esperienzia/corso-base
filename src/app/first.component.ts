@@ -3,11 +3,10 @@ import {CommonService} from './services/common.service';
 import {Router} from '@angular/router';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-first',
+  templateUrl: './first.component.html'
 })
-export class AppComponent {
+export class FirstComponent {
   title = 'app';
   constructor(public common: CommonService,
               private router: Router) {}
